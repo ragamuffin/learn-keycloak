@@ -6,3 +6,8 @@ Each learning step will be given a different tag number, and the same would be u
 This is a gradle based project, using `org.springframework.boot:spring-boot-starter-web` and `org.springframework.boot:spring-boot-starter-security`.
 
 See the default port for accessing the web services in `application.yaml`.
+
+# Step 2 - Security filter chain
+Added a very basic security filter chain to authenticate the user based on the URL.
+
+URI `/bye` doesn't need authentication, while its applied for `/hello`.
